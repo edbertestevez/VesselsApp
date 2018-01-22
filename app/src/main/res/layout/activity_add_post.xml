@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp">
+
+        <Button
+            android:id="@+id/btnDiscard"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.22"
+            android:background="@android:color/transparent"
+            android:text="DISCARD"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.22"
+
+            app:srcCompat="@drawable/logo_icon" />
+
+        <Button
+            android:id="@+id/btnPost"
+            android:layout_width="20dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:text="Post"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/light_white"
+        android:paddingBottom="30dp">
+
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPost"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="80dp"
+            android:layout_toEndOf="@+id/imageView13"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:foregroundTint="#000"
+            android:foregroundTintMode="src_over"
+            android:hint="Receiver's Name"
+            android:inputType="textPersonName"
+            android:textColor="#000" />
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/etAddress"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:foregroundTint="#000"
+            android:foregroundTintMode="src_over"
+            android:hint="Bags needed"
+            android:inputType="number"
+            android:textColor="#000" />
+
+
+        <Spinner
+            android:id="@+id/spnBloodtype"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/etEmail"
+            android:layout_below="@+id/etEmail"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="@color/colorAccent"
+            android:entries="@array/array_bloodtypes" />
+
+        <Spinner
+            android:id="@+id/spnCity"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_alignStart="@+id/spnBloodtype"
+            android:layout_below="@+id/spnBloodtype"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorAccent"
+            android:entries="@array/array_cities" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/spnCity"
+            android:layout_alignStart="@+id/spnCity"
+            android:layout_below="@+id/spnCity"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorAccent"
+            android:editable="false"
+            android:ems="10"
+            android:hint="Date Needed"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="110dp"
+            android:layout_alignEnd="@+id/etDate"
+            android:layout_alignStart="@+id/etDate"
+            android:layout_below="@+id/etDate"
+            android:backgroundTint="@color/colorAccent"
+            android:ems="10"
+            android:hint="Description"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/holo_red_light"
+            android:text="Add Photo"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/etAddress"
+            android:layout_marginTop="5dp"
+            android:layout_toStartOf="@+id/etDate"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/blood" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/etEmail"
+            android:layout_alignEnd="@+id/imageView17"
+            android:layout_alignTop="@+id/etEmail"
+            android:layout_toStartOf="@+id/etEmail"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/bloodbag" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_above="@+id/spnCity"
+            android:layout_alignParentStart="true"
+            android:layout_toStartOf="@+id/spnBloodtype"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/bloodtype" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_above="@+id/etDate"
+            android:layout_toStartOf="@+id/spnCity"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/location" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/etDate"
+            android:layout_toStartOf="@+id/etDate"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/calendar" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/etDescription"
+            android:layout_marginTop="20dp"
+            android:layout_toStartOf="@+id/spnCity"
+            android:paddingLeft="5dp"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/description" />
+
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:tintMode="add"
+            app:srcCompat="@drawable/upload_photo" />
+
+    </RelativeLayout>
+</ScrollView>
+</LinearLayout>

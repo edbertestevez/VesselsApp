@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/bottom_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/bottom_search"
+        android:title="Search Donors" />
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/bottom_add"
+
+        android:title="Blood Drives" />
+
+    <item
+        android:id="@+id/navigation_drive"
+        android:icon="@drawable/blooddrive"
+        android:title="Blood Drives" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/bottom_profile"
+        android:title="My Posts" />
+
+
+
+</menu>

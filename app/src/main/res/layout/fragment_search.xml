@@ -1,0 +1,189 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context="com.decypher.vesselsapp.Search.SearchFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView77"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spnCity"
+            android:layout_alignStart="@+id/spnType"
+            android:layout_marginBottom="3dp"
+            android:text="Blood Type"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView78"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/spnCity"
+            android:layout_alignStart="@+id/spnCity"
+            android:layout_marginBottom="3dp"
+            android:text="City/Municipality"
+            android:textColor="@color/colorAccent"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/textView76"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:text="Search for possible donors"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/btnSearch"
+            android:layout_width="65dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/spnCity"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/spnCity"
+            android:background="@color/colorPrimary"
+            android:padding="8dp"
+            android:tint="@color/colorWhite"
+            app:srcCompat="@drawable/ic_search_black_24dp" />
+
+        <Spinner
+            android:id="@+id/spnType"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_alignStart="@+id/textView79"
+            android:layout_below="@+id/textView76"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="17dp"
+            android:background="@color/dark_grey"
+            android:entries="@array/array_bloodtypes_all"
+            android:foregroundTint="@color/colorAccent"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent" />
+
+        <Spinner
+            android:id="@+id/spnCity"
+            android:layout_width="175dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/spnType"
+            android:layout_marginStart="11dp"
+            android:layout_toEndOf="@+id/spnType"
+            android:background="@color/dark_grey"
+            android:entries="@array/array_cities_all"
+            android:foregroundTint="@color/colorAccent"
+            android:textAlignment="center" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtDate"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/white" />
+
+        <TextView
+            android:id="@+id/txtSendMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtDate"
+            android:layout_margin="40dp"
+            android:text="Please select from the search filters"
+            android:textAlignment="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView79"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView76"
+            android:layout_below="@+id/btnSearch"
+            android:layout_marginTop="17dp"
+            android:text="Possible Donors for "
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txtType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="___"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignBaseline="@+id/textView79"
+            android:layout_alignBottom="@+id/textView79"
+            android:layout_toEndOf="@+id/textView79" />
+
+        <TextView
+            android:id="@+id/textView88"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtType"
+            android:layout_alignBottom="@+id/txtType"
+            android:layout_marginLeft="3dp"
+            android:layout_toEndOf="@+id/txtType"
+            android:text="at "
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView88"
+            android:layout_toEndOf="@+id/textView88"
+            android:text="____"
+            android:textColor="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView79"
+            android:layout_below="@+id/textView79"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:text="Result:   "
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Select search filter"
+            android:textColor="@color/colorAccent"
+            android:layout_alignBaseline="@+id/txtNumResult"
+            android:layout_alignBottom="@+id/txtNumResult"
+            android:layout_toEndOf="@+id/txtDate" />
+
+        <TextView
+            android:id="@+id/txtNumResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtDate"
+            android:layout_alignBottom="@+id/txtDate"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/txtResult"
+            android:text="(0 possible donors)"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</FrameLayout>

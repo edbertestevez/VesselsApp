@@ -1,0 +1,151 @@
+{
+  "project_info": {
+    "project_number": "307336259232",
+    "firebase_url": "https://vessels-app.firebaseio.com",
+    "project_id": "vessels-app",
+    "storage_bucket": "vessels-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307336259232:android:53799c95fe7310a1",
+        "android_client_info": {
+          "package_name": "com.example.vesselsappnew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307336259232-mt31cvdqhcftm797ufq4audc05ib2p7t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vesselsappnew",
+            "certificate_hash": "d2bc412984a3fdf29851d4e400410b5e612d21cf"
+          }
+        },
+        {
+          "client_id": "307336259232-ke92edppfs6oqjqmd5dn712cjsjuprrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmDm3beXfSIb2xpOUhwo52v8EogNWQBk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307336259232-ke92edppfs6oqjqmd5dn712cjsjuprrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307336259232:android:205fc07f35341e29",
+        "android_client_info": {
+          "package_name": "com.example.vesselsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307336259232-evkn1h6pv5s39bphghq3eusg1jh308ec.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.vesselsapp",
+            "certificate_hash": "d2bc412984a3fdf29851d4e400410b5e612d21cf"
+          }
+        },
+        {
+          "client_id": "307336259232-ke92edppfs6oqjqmd5dn712cjsjuprrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmDm3beXfSIb2xpOUhwo52v8EogNWQBk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307336259232-ke92edppfs6oqjqmd5dn712cjsjuprrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:307336259232:android:e14348a3a1bb91e6",
+        "android_client_info": {
+          "package_name": "com.decypher.vesselsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "307336259232-6kf9e18fh5gb6d2k8ad0t82m0rprdrd8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.decypher.vesselsapp",
+            "certificate_hash": "9f08fde8e21ce1180f8de6351221e5a0461b1d28"
+          }
+        },
+        {
+          "client_id": "307336259232-k20rdg4vjkrcq39ks6f4jnpp2dqaomls.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.decypher.vesselsapp",
+            "certificate_hash": "d2bc412984a3fdf29851d4e400410b5e612d21cf"
+          }
+        },
+        {
+          "client_id": "307336259232-ke92edppfs6oqjqmd5dn712cjsjuprrt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmDm3beXfSIb2xpOUhwo52v8EogNWQBk4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "307336259232-ke92edppfs6oqjqmd5dn712cjsjuprrt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

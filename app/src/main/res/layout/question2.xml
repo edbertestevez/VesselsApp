@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="56dp">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Preparation before donating blood"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView47"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="Your body must be in prepared for donation."
+            android:textColor="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/textView59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView48"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="45dp"
+            android:padding="5dp"
+            android:text="1."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView59"
+            android:layout_alignBottom="@+id/textView59"
+            android:layout_toEndOf="@+id/textView59"
+            android:text="Have enough rest and sleep."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView59"
+            android:layout_below="@+id/textView59"
+            android:layout_marginTop="10dp"
+            android:padding="5dp"
+            android:text="2."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView64"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/textView62"
+            android:padding="5dp"
+            android:text="3."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView62"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView64"
+            android:layout_alignTop="@+id/textView63"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:text="No medications for at least 24 hours prior to blood donation. "
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView66"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView65"
+            android:layout_alignBottom="@+id/textView65"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/textView65"
+            android:text="Have something to eat prior to blood donation, avoid fatty food. "
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView61"
+            android:layout_alignBottom="@+id/textView61"
+            android:layout_toEndOf="@+id/textView61"
+            android:text="No alcohol intake 24 hours prior to blood donation. "
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView65"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView62"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/textView62"
+            android:padding="5dp"
+            android:text="4."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView67"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView66"
+            android:layout_marginTop="11dp"
+            android:layout_toStartOf="@+id/textView66"
+            android:padding="5dp"
+            android:text="5."
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView68"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView67"
+            android:layout_alignBottom="@+id/textView67"
+            android:layout_marginRight="20dp"
+            android:layout_toEndOf="@+id/textView67"
+            android:text="Drink plenty of fluid, like water or juice. "
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btnNext"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@android:color/transparent"
+            android:text="CANCEL DONATION"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView67"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorWhite"
+            android:text="I AM WILLING"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+</LinearLayout>

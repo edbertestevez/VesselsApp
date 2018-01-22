@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.decypher.vesselsapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_phone"
+        android:label="Vessels"
+        android:roundIcon="@drawable/logo_phone"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".SplashActivity"
+            android:label="Vessels"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".StartingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".MyPosts.ViewPost"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPosts.AddPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPosts.ViewMyPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MyPosts.EditPostActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Others.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Others.SignupActivity1"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Others.SignupActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Others.SignupActivity3"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Messages.MessagesActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".DonationProcess.DonationStep1"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".DonationProcess.DonationStep2"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".DonationProcess.DonationStep3"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".DonationProcess.ManageDonationActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.DonorProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.MyProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Profile.EditProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Profile.UserProfileActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Walkthrough.WalkActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Others.LoginSelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Coordinator.CoordinatorMainActivity"
+            android:label="@string/title_activity_coordinator_main"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Coordinator.AddBloodDriveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coordinator.CoordinatorLoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".BloodDrive.SelectedBloodDriveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Home.AboutUsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coordinator.EventModule.EditBloodDriveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coordinator.EditCoordinatorAccount"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coordinator.EventModule.MySelectedDriveActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Coordinator.ConfirmDonorActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Messages.SelectedChatActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Messages.UserSelectedChatActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Coordinator.AddSelectionActivity" />
+        <activity android:name=".Coordinator.AddAdvocacyActivity" />
+        <activity android:name=".Coordinator.EventModule.EditAdvocacyActivity" />
+        <activity android:name=".Coordinator.EventModule.MySelectedAdvocacyActivity" />
+        <activity android:name=".BloodDrive.SelectedEventActivity" />
+        <activity
+            android:name=".Coordinator.EventModule.ViewAllRespondents"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Coordinator.EventModule.ViewAllDonors"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Coordinator.HomeModule.ViewPostRespondents"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Coordinator.HomeModule.ViewPostDonations"
+            android:windowSoftInputMode="adjustResize" />
+        <activity android:name=".Coordinator.EventModule.DriveStatisticsActivity" />
+        <activity android:name=".Coordinator.EventModule.ViewAdvocacyAttendee" />
+
+        <service android:name=".Notifications.MyFirebaseInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service android:name=".Notifications.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".Search.SearchResultActivity" />
+        <activity android:name=".Profile.SearchProfileActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="56dp">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgPost"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignEnd="@+id/txtThanks"
+            android:layout_below="@+id/textView95"
+            android:layout_marginEnd="25dp"
+            android:layout_marginTop="75dp"
+            app:srcCompat="@drawable/upload_photo" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgUser"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_above="@+id/txtThanks"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@+id/imageView23"
+            app:srcCompat="@drawable/upload_photo" />
+
+        <TextView
+            android:id="@+id/txtThanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgPost"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="80dp"
+            android:text="Thank you for responding to the need of"
+            android:textAlignment="viewStart"
+            android:textColor="@android:color/white"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/txtThanks"
+            android:layout_alignStart="@+id/txtThanks"
+            android:layout_below="@+id/txtThanks"
+            android:layout_marginTop="45dp"
+            android:text="Please contact/message the blood bank for the schedule of the blood transfusion."
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:layout_alignEnd="@+id/txtTime"
+            android:layout_alignStart="@+id/txtTime"
+            android:layout_below="@+id/txtTime"
+            android:layout_marginTop="45dp"
+            android:background="@color/light_grey"
+            android:text="Continue"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:text="You're a life saver"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView23"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_above="@+id/txtThanks"
+            android:layout_alignTop="@+id/imgPost"
+            android:layout_centerHorizontal="true"
+            app:srcCompat="@drawable/logo_icon" />
+
+        <Button
+            android:id="@+id/btnMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/btnProceed"
+            android:layout_alignStart="@+id/btnProceed"
+            android:layout_below="@+id/btnProceed"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorAccent"
+            android:text="Message Blood Bank"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</LinearLayout>

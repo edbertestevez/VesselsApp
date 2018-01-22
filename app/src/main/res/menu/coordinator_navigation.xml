@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_search"
+        android:icon="@drawable/bottom_search"
+        android:title="Search" />
+
+
+    <item
+        android:id="@+id/navigation_add"
+        android:icon="@drawable/ic_note_add_white_36dp"
+        android:title="Add Event" />
+
+    <item
+        android:id="@+id/navigation_posts"
+        android:icon="@drawable/blooddrive"
+        android:title="My Events" />
+
+    <item
+        android:id="@+id/navigation_account"
+        android:icon="@drawable/bottom_profile"
+        android:title="Profile" />
+
+
+</menu>

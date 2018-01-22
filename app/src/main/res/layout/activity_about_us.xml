@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView15"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="@color/colorAccent"
+                android:paddingBottom="40dp"
+                app:srcCompat="@drawable/logo_icon" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView15"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="22dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="VESSELS"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView15"
+                android:layout_margin="30dp"
+                android:gravity="fill_horizontal|fill"
+                android:lineSpacingExtra="8sp"
+                android:text="              Vessels offers a platform for easier searching for blood and identifying people who are in need of blood donors. It lets you be informed of the upcoming blood-letting activities or blood drives which aims to create public consciousness on the importance of blood donation in saving the lives of millions of Filipinos. Currently Vessels only covers donation within Negros Occidental."
+                android:textColor="@color/colorAccent"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/textView81"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/textView56"
+                android:text="Developed By: Decypher"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="17sp" />
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/imageView10"
+                android:layout_marginRight="25dp"
+                android:layout_toStartOf="@+id/imageView10"
+                android:src="@drawable/about2"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <ImageView
+                android:id="@+id/imageView9"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_alignTop="@+id/imageView10"
+                android:layout_marginLeft="25dp"
+                android:layout_toEndOf="@+id/imageView10"
+                android:src="@drawable/about1"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_below="@+id/textView81"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/about3"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

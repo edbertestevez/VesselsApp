@@ -1,0 +1,202 @@
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="Edit Blood Drive Details"
+            android:textColor="@color/red"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/textView"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="12dp"
+            android:text="Event Name:"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView3"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="53dp"
+            android:text="Date:"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etDescription"
+            android:layout_below="@+id/etDescription"
+            android:layout_marginTop="15dp"
+            android:text="Address:"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/etEvent"
+            android:layout_marginTop="15dp"
+            android:text="Description:"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTitle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/etTimeStart"
+            android:layout_below="@+id/etTimeStart"
+            android:layout_marginTop="15dp"
+            android:text="Time (End):"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView10"
+            android:layout_below="@+id/etDate"
+            android:layout_marginTop="15dp"
+            android:text="Time (Start):"
+            android:textColor="@color/colorAccent"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toEndOf="@+id/textView"
+            android:background="@color/black"
+            android:text="Save"
+            android:textColor="@color/white"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btnPhoto"
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imgEvent"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/txtTitle"
+            android:text="Add Photo" />
+
+        <EditText
+            android:id="@+id/etEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginEnd="25dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etEvent"
+            android:layout_alignStart="@+id/textView11"
+            android:layout_below="@+id/textView11"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etDescription"
+            android:layout_alignStart="@+id/textView12"
+            android:layout_below="@+id/textView12"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/etDate"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/etTimeStart"
+            android:layout_alignStart="@+id/etAddress"
+            android:layout_below="@+id/textView10"
+            android:ems="10"
+            android:hint="Select Date"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/etTimeStart"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtTime"
+            android:layout_below="@+id/txtTime"
+            android:ems="10"
+            android:hint="Select Start Time"
+            android:inputType="time" />
+
+        <ImageView
+            android:id="@+id/imgEvent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignEnd="@+id/button3"
+            android:layout_alignStart="@+id/etTimeEnd"
+            android:layout_below="@+id/etTimeEnd"
+            android:layout_marginTop="20dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/upload_photo" />
+
+        <EditText
+            android:id="@+id/etTimeEnd"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtTitle"
+            android:layout_below="@+id/txtTitle"
+            android:ems="10"
+            android:hint="Select End Time"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnPhoto"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="31dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="Save Changes"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</ScrollView>

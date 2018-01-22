@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#fff"
+        android:padding="5sp">
+
+        <TextView
+            android:id="@+id/txtAssociation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="16dp"
+            android:text="Receiver Name:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtAssociation"
+            android:layout_below="@+id/txtAssociation"
+            android:text="Address:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/txtEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txtName"
+            android:layout_centerVertical="true"
+            android:text="Message:"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/txtEmail"
+            android:layout_marginBottom="12dp"
+            android:text="Posted By:" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView20"
+            android:layout_alignBottom="@+id/textView20"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="93dp"
+            android:text="10/21/17" />
+
+        <TextView
+            android:id="@+id/txtReceiverName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txtAssociation"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/txtAssociation"
+            android:text="Ricky"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Brgy. Bata"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:layout_alignBaseline="@+id/txtName"
+            android:layout_alignBottom="@+id/txtName"
+            android:layout_alignStart="@+id/txtReceiverName" />
+
+        <TextView
+            android:id="@+id/txtSendMessage"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_alignTop="@+id/txtEmail"
+            android:layout_marginStart="13dp"
+            android:layout_toEndOf="@+id/txtEmail"
+            android:padding="2sp"
+            android:text="Ngayo bulig para sa classmate ko"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView20"
+            android:layout_alignBottom="@+id/textView20"
+            android:layout_toEndOf="@+id/txtEmail"
+            android:text="JB Arrobang" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="0dp"
+            android:text="Type:"
+            android:textSize="15sp"
+            android:layout_alignTop="@+id/txtReceiverName"
+            android:layout_alignEnd="@+id/textView36" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtAssociation"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/txtSendMessage"
+            android:text="AB"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</LinearLayout>

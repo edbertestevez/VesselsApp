@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/colorWhite">
+
+                <TextView
+                    android:id="@+id/txtBags"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView43"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/textView43"
+                    android:text="2"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView57"
+                    android:layout_below="@+id/textView57"
+                    android:layout_marginTop="15dp"
+                    android:layout_toStartOf="@+id/txtDateNeeded"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/txtSender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/textView41"
+                    android:layout_toEndOf="@+id/textView71"
+                    android:text="Ricky Aldea"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView57"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageView34"
+                    android:layout_marginTop="15dp"
+                    android:layout_toEndOf="@+id/textView41"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="220dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView22"
+                    android:layout_below="@+id/messageContainer"
+                    android:layout_marginTop="17dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtDateNeeded"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/imageView36"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/imageView36"
+                    android:text="2017-10-18"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/textView39"
+                    android:layout_below="@+id/textView39"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/etAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/imageView36"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/imageView36"
+                    android:text="Brgy. Bata, Bacolod City"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView43"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignStart="@+id/txtSender"
+                    android:layout_below="@+id/txtSender"
+                    android:layout_toStartOf="@+id/txtContactOrg"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:id="@+id/txtDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@+id/txtContactOrg"
+                    android:layout_marginEnd="32dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/textView57"
+                    android:text="Help my friend please. Boombastic fantastic baby dance dance dance dance dance fantastic baby"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/txtType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/colorWhite"
+                    android:padding="10dp"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp"
+                    android:text="AB"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="42sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/txtDescription"
+                    android:paddingTop="10dp">
+
+                    <TextView
+                        android:id="@+id/txtNoneTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/txtConfirm"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="25dp"
+                        android:text="No confirmed donors as of the moment"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <TextView
+                        android:id="@+id/txtConfirm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtNoneTwo"
+                        android:layout_below="@+id/btnViewRespondents"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="30dp"
+                        android:text="CONFIRMED DONORS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerConfirmed"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/txtNoneTwo"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp" />
+
+                    <TextView
+                        android:id="@+id/txtPoster"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@+id/txtPossible"
+                        android:layout_marginTop="18dp"
+                        android:text="Poster Name and Date"
+                        android:textSize="12sp"
+                        android:textStyle="italic" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerDonor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txtInstruction"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="10dp" />
+
+                    <TextView
+                        android:id="@+id/txtPossible"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtConfirm"
+                        android:layout_below="@+id/relativeLayout10"
+                        android:layout_marginTop="25dp"
+                        android:text="POSSIBLE DONORS / RESPONDENTS"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtInstruction"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtPossible"
+                        android:layout_below="@+id/txtPossible"
+                        android:text="Select the donor to confirm his/her donation"
+                        android:textColor="@color/colorAccent"
+                        android:textStyle="italic"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/txtNoneOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/txtPossible"
+                        android:layout_below="@+id/txtPossible"
+                        android:layout_marginBottom="25dp"
+                        android:layout_marginTop="8dp"
+                        android:text="No respondents as of the moment"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:visibility="invisible" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_alignEnd="@+id/recyclerConfirmed"
+                        android:layout_alignTop="@+id/txtConfirm"
+                        android:layout_marginEnd="41dp"
+                        android:gravity="bottom">
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txtRespondentCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/txtPossible"
+                        android:layout_alignBottom="@+id/txtPossible"
+                        android:layout_marginLeft="5dp"
+                        android:layout_toEndOf="@+id/txtPossible"
+                        android:text="(0)"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtConfirmedCount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBaseline="@+id/txtConfirm"
+                        android:layout_alignBottom="@+id/txtConfirm"
+                        android:layout_marginEnd="5dp"
+                        android:layout_toRightOf="@+id/txtConfirm"
+                        android:text="(0)"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout10"
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:layout_alignParentStart="true"
+                        android:layout_below="@+id/txtPoster"
+                        android:layout_marginTop="25dp"
+                        android:background="#cacaca">
+
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btnViewRespondents"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignEnd="@+id/recyclerDonor"
+                        android:layout_alignStart="@+id/txtConfirm"
+                        android:layout_below="@+id/recyclerDonor"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginEnd="25dp"
+                        android:enabled="false"
+                        android:text="Only the blood bank can view all respondents"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/btnViewDonations"
+                        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/recyclerConfirmed"
+                        android:layout_below="@+id/recyclerConfirmed"
+                        android:layout_marginBottom="40dp"
+                        android:layout_marginEnd="25dp"
+                        android:enabled="false"
+                        android:text="Only the blood bank can view all respondents"
+                        android:textColor="@color/colorAccent"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textView71"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtContactOrg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/imageView34"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/imageView34"
+                    android:text="Contact the Blood Center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <RelativeLayout
+                    android:id="@+id/messageContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="65dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/imgPost"
+                    android:background="@color/colorAccent">
+
+                    <Button
+                        android:id="@+id/btnMessage"
+                        android:layout_width="match_parent"
+                        android:layout_height="35dp"
+                        android:layout_margin="15dp"
+                        android:background="@color/colorPrimary"
+                        android:text="Message Blood Center"
+                        android:textColor="@android:color/white"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/txtBags"
+                    android:layout_alignTop="@+id/txtBags"
+                    android:layout_marginLeft="8dp"
+                    android:layout_toEndOf="@+id/txtBags"
+                    android:text="bag/s"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageView34"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:layout_alignEnd="@+id/imageView36"
+                    android:layout_below="@+id/imageView36"
+                    android:layout_marginTop="18dp"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/telephone" />
+
+                <ImageView
+                    android:id="@+id/imageView37"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignStart="@+id/textView41"
+                    android:layout_below="@+id/textView43"
+                    app:srcCompat="@drawable/bag" />
+
+                <ImageView
+                    android:id="@+id/imageView36"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/imageView35"
+                    android:layout_marginTop="18dp"
+                    android:layout_toEndOf="@+id/textView57"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/calendar" />
+
+                <ImageView
+                    android:id="@+id/imageView35"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_below="@+id/imageView37"
+                    android:layout_marginTop="18dp"
+                    android:layout_toStartOf="@+id/etAddress"
+                    android:tint="@color/colorAccent"
+                    app:srcCompat="@drawable/location" />
+
+            </RelativeLayout>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/relativeDonate"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:gravity="bottom">
+
+        <Button
+            android:id="@+id/btnDonate"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="962dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="DONATE"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+</LinearLayout>

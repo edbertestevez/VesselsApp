@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:paddingTop="56dp">
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="DONOR QUALIFICATIONS"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView47"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:text="General Requirements for Blood Donation"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/imageView9"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView48"
+            android:layout_marginTop="50dp"
+            android:layout_toStartOf="@+id/textView48"
+            app:srcCompat="@drawable/checked" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView9"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/imageView9"
+            android:text="You must be at least 18 years old."
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView49"
+            android:layout_below="@+id/textView49"
+            android:layout_marginTop="5dp"
+            android:text="16 and 17 year-olds can donate with a Minor Donor Permission Form signed by Parent or Guardian"
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignStart="@+id/imageView9"
+            android:layout_below="@+id/textView50"
+            android:layout_marginTop="10dp"
+            app:srcCompat="@drawable/checked" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView51"
+            android:layout_below="@+id/textView51"
+            android:layout_marginTop="5dp"
+            android:text="Additional weight requirements apply for donors 18-years-old and younger and all high school donors."
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView10"
+            android:layout_alignStart="@+id/textView50"
+            android:text="Weight must be at least 110lbs."
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView52"
+            android:layout_marginTop="12dp"
+            android:layout_toStartOf="@+id/textView49"
+            app:srcCompat="@drawable/checked" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView12"
+            android:layout_alignStart="@+id/textView52"
+            android:text="Be in good  health and feeling well."
+            android:textColor="@color/colorWhite"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="275dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/textView53"
+            android:layout_below="@+id/textView53"
+            android:layout_marginTop="5dp"
+            android:text="Healthy means that you feel well and can perform normal activities."
+            android:textColor="@color/colorWhite"
+            android:textSize="12sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/textView54"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="50dp"
+            android:background="@color/colorWhite"
+            android:text="I AM ELIGIBLE"
+            android:textColor="@color/colorPrimary"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnNext"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:text="CANCEL"
+            android:textColor="@color/colorWhite" />
+
+    </RelativeLayout>
+</LinearLayout>

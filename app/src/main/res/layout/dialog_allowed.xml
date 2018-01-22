@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <TextView
+            android:id="@+id/txtInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtDate"
+            android:layout_marginTop="15dp"
+            android:text="Please sign in to message donors around Negros Occidental"
+            android:textAlignment="viewStart"
+            android:textColor="@color/colorAccent"
+            android:textSize="19sp" />
+
+        <Button
+            android:id="@+id/btnProceed"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtInfo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:background="@color/colorAccent"
+            android:text="Close"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/dfsfds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView101"
+            android:layout_marginTop="15dp"
+            android:layout_toStartOf="@+id/txtRecipientBlood"
+            android:text="Your Blood Type:"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dfsfds"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/imgEdit"
+            android:text="Recipient's Blood"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtUserblood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtDate"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/dfsfds"
+            android:text="AB+"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRecipientBlood"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/txtDate"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/txtDate"
+            android:text="A+"
+            android:textColor="@color/colorAccent"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView101"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/dfsfds"
+            android:text="You are not elligible to donate"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+    </RelativeLayout>
+</LinearLayout>

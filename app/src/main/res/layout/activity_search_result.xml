@@ -1,0 +1,287 @@
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/colorAccent"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/textView30"
+                android:layout_alignEnd="@+id/textView30"
+                android:layout_alignStart="@+id/textView30"
+                android:paddingBottom="-4dp"
+                android:text="AB"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/txtPostCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtPostCount1"
+                android:layout_alignEnd="@+id/txtPostCount1"
+                android:layout_alignStart="@+id/txtPostCount1"
+                android:paddingBottom="-4dp"
+                android:text="4"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:text="Blood Type"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:id="@+id/txtPostCount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:text="Posts"
+                android:textColor="@color/colorWhite" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@mipmap/ic_launcher_round" />
+
+            <TextView
+                android:id="@+id/txtAssociation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgUser"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="5dp"
+                android:text="JOHN CARLO"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtCount1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:text="Donated"
+                android:textColor="@color/light_grey" />
+
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/txtCount1"
+                android:layout_alignEnd="@+id/txtCount1"
+                android:layout_alignStart="@+id/txtCount1"
+                android:paddingBottom="-4dp"
+                android:text="5"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorAccent">
+
+            <Button
+                android:id="@+id/btnMessage"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_margin="8dp"
+                android:background="@color/colorPrimaryDark"
+                android:text="Send a Message"
+                android:textColor="@android:color/white" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:padding="8dp">
+
+            <TextView
+                android:id="@+id/txtBirthdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView31"
+                android:layout_alignTop="@+id/imageView31"
+                android:layout_marginLeft="22dp"
+                android:layout_toEndOf="@+id/imageView31"
+                android:text="June 19, 1997, 20 years old"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtGender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView31"
+                android:layout_alignTop="@+id/imageView30"
+                android:layout_marginLeft="22dp"
+                android:layout_toEndOf="@+id/imageView30"
+                android:text="Male"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/imageView30"
+                android:layout_alignTop="@+id/imageView29"
+                android:layout_marginLeft="22dp"
+                android:layout_toEndOf="@+id/imageView29"
+                android:text="jacotabio@gmail.com"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/txtContact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView28"
+                android:layout_alignTop="@+id/imageView28"
+                android:layout_marginLeft="22dp"
+                android:layout_toEndOf="@+id/imageView28"
+                android:text="+639 09 123 4567"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/etAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/imageView26"
+                android:layout_alignTop="@+id/imageView26"
+                android:layout_marginLeft="22dp"
+                android:layout_toEndOf="@+id/imageView26"
+                android:text="Brgy. Taculing, Bacolod City"
+                android:textColor="@color/colorAccent"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imageView26"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="13dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/location" />
+
+            <ImageView
+                android:id="@+id/imageView28"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/imageView26"
+                android:layout_below="@+id/imageView26"
+                android:layout_marginTop="20dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/telephone" />
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/imageView28"
+                android:layout_below="@+id/imageView28"
+                android:layout_marginTop="20dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/email" />
+
+            <ImageView
+                android:id="@+id/imageView30"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/imageView29"
+                android:layout_below="@+id/imageView29"
+                android:layout_marginTop="20dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/genders" />
+
+            <ImageView
+                android:id="@+id/imageView31"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignStart="@+id/imageView30"
+                android:layout_below="@+id/imageView30"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="20dp"
+                android:tint="@color/colorAccent"
+                app:srcCompat="@drawable/date_of_birth" />
+
+            <ProgressBar
+                android:id="@+id/progress"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/colorAccent"
+                android:progressTint="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/progress"
+                android:text="Loading posts"
+                android:textAlignment="center"
+                android:textColor="@color/colorAccent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fafafa">
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnConfirm"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimaryDark"
+        android:enabled="false"
+        android:text="Available for Donation"
+        android:textColor="@android:color/white" />
+
+
+</RelativeLayout>

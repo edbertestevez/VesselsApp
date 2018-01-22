@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <TextView
+                android:id="@+id/txtUsername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/imgUser"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:layout_toEndOf="@+id/imgUser"
+                android:text="Poster Name"
+                android:textColor="@color/colorAccent" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imgUser"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="3dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="8dp"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+            <TextView
+                android:id="@+id/txtPostDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtUsername"
+                android:layout_below="@+id/txtUsername"
+                android:text="Date"
+                android:textColor="@color/colorAccent" />
+
+            <TextView
+                android:id="@+id/txtBloodType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:paddingTop="6dp"
+                android:text="AB"
+                android:textAlignment="center"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imgPost"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_below="@+id/relativeLayout"
+            android:layout_centerHorizontal="true"
+            android:background="@color/colorAccent"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+
+        <TextView
+            android:id="@+id/txtSender"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_alignBottom="@+id/imgPost"
+            android:layout_alignParentStart="true"
+            android:background="#9000"
+            android:paddingBottom="12dp"
+            android:paddingLeft="22dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:text="Edbert Jason"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/imageView25"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignStart="@+id/txtDescription"
+            android:layout_below="@+id/imgPost"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/colorAccent"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/location" />
+
+        <TextView
+            android:id="@+id/etAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView25"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/imageView25"
+            android:width="150dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="150dp"
+            android:text="Bacolod City"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView27"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignBottom="@+id/etAddress"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@+id/etAddress"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/calendar" />
+
+        <TextView
+            android:id="@+id/txtNeeded"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView27"
+            android:layout_marginLeft="8dp"
+            android:layout_toEndOf="@+id/imageView27"
+            android:text="Oct. 18, 2017"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:ellipsize="end"
+            android:maxLines="4"
+            android:text="TextView"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:id="@+id/txtBags"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_marginLeft="4dp"
+            android:layout_toEndOf="@+id/imageView6"
+            android:text="10 Bags"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignStart="@+id/imageView27"
+            android:layout_alignTop="@+id/txtBags"
+            android:layout_marginTop="-2dp"
+            android:backgroundTint="@color/colorAccent"
+            android:tint="@color/colorAccent"
+            app:srcCompat="@drawable/respondent" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/txtResponse"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@color/light_grey" />
+
+        <TextView
+            android:id="@+id/txtResponse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/imageView7"
+            android:layout_marginLeft="4dp"
+            android:layout_marginTop="2dp"
+            android:layout_toEndOf="@+id/imageView7"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:id="@+id/relative_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtDescription"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/btnDonate"
+                android:layout_width="110dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:background="@color/colorPrimaryDark"
+                android:elevation="0dp"
+                android:text="Donate"
+                android:textColor="@color/colorWhite" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_alignStart="@+id/imageView25"
+            android:layout_below="@+id/imageView25"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginTop="15dp"
+            app:srcCompat="@drawable/bag" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

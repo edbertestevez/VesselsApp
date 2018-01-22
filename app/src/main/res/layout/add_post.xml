@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_red_light"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintHorizontal_bias="1.0"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0"
+    tools:layout_constraintBottom_creator="1"
+    tools:layout_constraintLeft_creator="1"
+    tools:layout_constraintRight_creator="1"
+    tools:layout_constraintTop_creator="1">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:paddingLeft="0dp">
+
+        <Button
+            android:id="@+id/button14"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.22"
+            android:background="@android:color/transparent"
+            android:text="DISCARD"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="0.22"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <Button
+            android:id="@+id/button12"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="0.25"
+            android:background="@android:color/transparent"
+            android:text="Post"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/etAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#fff"
+        android:backgroundTintMode="screen"
+        android:ems="10"
+        android:foregroundTint="@color/colorWhite"
+        android:hint="Receiver's Name"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#fff"
+        android:ems="10"
+        android:hint="Bags needed"
+        android:inputType="number"
+        android:layout_below="@+id/etAddress"
+        android:layout_alignParentEnd="true" />
+
+
+    <Spinner
+        android:id="@+id/bloodType"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/txtName"
+        android:layout_below="@+id/txtName"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp" />
+
+    <Spinner
+        android:id="@+id/city"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_alignStart="@+id/bloodType"
+        android:layout_below="@+id/bloodType"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp" />
+
+    <EditText
+        android:id="@+id/etMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/city"
+        android:layout_alignStart="@+id/city"
+        android:layout_below="@+id/city"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:hint="Date Needed"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/etEvent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/etMessage"
+        android:layout_alignStart="@+id/etMessage"
+        android:layout_below="@+id/etMessage"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@color/colorWhite"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textMultiLine" />
+
+    <Button
+        android:id="@+id/button11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:text="Add Photo" />
+
+    <ImageView
+        android:id="@+id/imageView13"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/etAddress"
+        android:layout_marginTop="5dp"
+        android:layout_toStartOf="@+id/etMessage"
+        app:srcCompat="@drawable/blood" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/txtName"
+        android:layout_toStartOf="@+id/txtName"
+        app:srcCompat="@drawable/bloodbag"
+        android:layout_alignEnd="@+id/imageView17"
+        android:layout_alignTop="@+id/txtName" />
+
+    <ImageView
+        android:id="@+id/imageView17"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/bloodtype"
+        android:layout_above="@+id/city"
+        android:layout_alignParentStart="true"
+        android:layout_toStartOf="@+id/bloodType" />
+
+    <ImageView
+        android:id="@+id/imageView18"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/location"
+        android:layout_above="@+id/etMessage"
+        android:layout_toStartOf="@+id/city" />
+
+    <ImageView
+        android:id="@+id/imageView19"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        app:srcCompat="@drawable/calendar"
+        android:layout_alignTop="@+id/etMessage"
+        android:layout_toStartOf="@+id/etMessage" />
+
+    <ImageView
+        android:id="@+id/imageView20"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_alignTop="@+id/etEvent"
+        android:layout_toStartOf="@+id/city"
+        android:paddingLeft="5dp"
+        app:srcCompat="@drawable/description" />
+
+    <ImageView
+        android:id="@+id/imageView21"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button11"
+        android:layout_alignEnd="@+id/etEvent"
+        app:srcCompat="@mipmap/ic_launcher" />
+
+</RelativeLayout>

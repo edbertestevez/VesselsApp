@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="match_parent"
+                android:layout_height="175dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorAccent">
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignTop="@+id/imgUser"
+                    android:layout_marginStart="16dp"
+                    android:text="Edit Profile"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgUser"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/txtChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imgUser"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="5dp"
+                    android:text="Change Picture"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_below="@+id/relativeLayout3"
+                    android:background="@color/colorWhite"
+                    android:paddingBottom="20dp"
+                    android:paddingLeft="20dp">
+
+                    <TextView
+                        android:id="@+id/textView37"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/spnCity"
+                        android:layout_below="@+id/spnCity"
+                        android:layout_marginTop="10dp"
+                        android:text="Date of Birth:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/etDate"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView37"
+                        android:layout_below="@+id/textView37"
+                        android:ems="10"
+                        android:inputType="date" />
+
+                    <TextView
+                        android:id="@+id/textView25"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Name:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/etName"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView25"
+                        android:layout_below="@+id/textView25"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/textView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/etName"
+                        android:layout_below="@+id/etName"
+                        android:layout_marginTop="10dp"
+                        android:text="Contact Number:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/etContact"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView32"
+                        android:layout_below="@+id/textView32"
+                        android:ems="10"
+                        android:inputType="phone" />
+
+                    <TextView
+                        android:id="@+id/textView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/etContact"
+                        android:layout_below="@+id/spnType"
+                        android:layout_marginTop="10dp"
+                        android:text="Address:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/textView27"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/spnCity"
+                        android:layout_below="@+id/etAddress"
+                        android:layout_marginTop="10dp"
+                        android:text="City:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <EditText
+                        android:id="@+id/etAddress"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView33"
+                        android:layout_below="@+id/textView33"
+                        android:ems="10"
+                        android:inputType="textPersonName" />
+
+                    <Spinner
+                        android:id="@+id/spnCity"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/etAddress"
+                        android:layout_below="@+id/textView27"
+                        android:entries="@array/array_cities" />
+
+                    <TextView
+                        android:id="@+id/textView55"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/etContact"
+                        android:layout_below="@+id/etContact"
+                        android:layout_marginTop="10dp"
+                        android:text="Blood Type:"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13sp" />
+
+                    <Spinner
+                        android:id="@+id/spnType"
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@+id/textView55"
+                        android:layout_below="@+id/textView55"
+                        android:entries="@array/array_bloodtypes" />
+
+                    <Button
+                        android:id="@+id/btnSave"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:layout_alignStart="@+id/etDate"
+                        android:layout_below="@+id/etDate"
+                        android:layout_marginTop="25dp"
+                        android:background="@color/colorPrimary"
+                        android:text="Save Changes"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite" />
+
+                </RelativeLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>
